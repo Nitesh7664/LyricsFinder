@@ -5,7 +5,7 @@ const Context = React.createContext();
 
 const reducer = (action, state) => {
     switch(action.type){
-        case SEARCH_TRACKS:
+        case 'SEARCH_TRACKS':
             return ({
                 ...state,
                 track_list: action.payload,
