@@ -7,7 +7,7 @@ import Track from './Track';
 function Tracks() {
     return (
         <Consumer>
-            {value =>   {
+            {value => {
                 var { track_list, heading } = value;
                 if(track_list === undefined || track_list.length === 0){
                    return <Spinner />
